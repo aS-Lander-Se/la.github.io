@@ -1,0 +1,451 @@
+@media screen and (min-width: 1024px) {
+    .section-1-hero {
+        width: 100%;
+    }
+    //hero
+    .hero {
+        @include agrupaContenido;
+        //nav-bar
+        .nav-bar {
+            width: inherit;
+            max-width: 1280px;
+            height: 96px;
+            margin: {
+                top: 16px;
+                bottom: 56px;
+            }
+            @include agruparObjetos;
+            //title
+            .title {
+                width: 416px;
+                a {
+                    text-decoration: none;
+                    @include estiloTextA
+                }
+            }
+            //logo
+            .logo {
+                width: 256px
+            }
+            //menu
+            .menu {
+                width: 416px;
+                //lista
+                .lista {
+                    @include agruparObjetos;
+                    //opcion
+                    .opcion {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            @include estiloTextA
+                        }
+                    }
+                }
+            }
+        }
+        //opciones
+        .opciones {
+            width: inherit;
+            max-width: 1280px;
+            z-index: 200;
+            margin: {
+                top: 56px;
+                bottom: 24px;
+            }
+            .lista {
+                @include agruparObjetos;
+                //opcion
+                .opcion {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        @include estiloTextB
+                    }
+                }
+            }
+        }
+        //slide-hero
+        .slide-hero {
+            width: inherit;
+            max-width: 1280px;
+            margin: {
+                top: 24px;
+                bottom: 14px;
+            }
+            @include agruparSlide;
+            //slide imagenes
+            .img_hero {
+                width: 100%;
+                height: 576px;
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: center;
+                z-index: 0;
+                //grupo
+                .grupo {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 1088px;
+                    height: inherit;
+                    //img
+                    .img {
+                        position: absolute;
+                        width: 576px;
+                        height: inherit;
+                        img {
+                            width: inherit;
+                            height: inherit;
+                            border-radius: 50%;
+                            object-fit: none;
+                        }
+                    }
+                    //title
+                    .title {
+                        position: absolute;
+                        @include estiloTextC
+                    }
+                }
+                //active
+                .active {
+                    display: flex;
+                }
+            }
+            //botones
+            .botones {
+                width: 960px;
+                height: 68px;
+                z-index: 100;
+                @include agruparObjetos;
+                //boton
+                .boton {
+                    @include estiloTextD;
+                }
+                //select
+                .select {
+                    @include hoverButton;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        //line
+        .line {
+            margin-top: 14px;
+            margin-bottom: 24px;
+            @include line;
+        }
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .section-1-hero {
+        width: 100%;
+    }
+    //hero
+    .hero {
+        @include agrupaContenido;
+        //nav-bar
+        .nav-bar {
+            width: inherit;
+            max-width: 928px;
+            height: 64px;
+            margin: {
+                top: 16px;
+                bottom: 48px;
+            }
+            @include agruparObjetos;
+            //title
+            .title {
+                width: 304px;
+                a {
+                    text-decoration: none;
+                    @include estiloTextA
+                }
+            }
+            //logo
+            .logo {
+                width: 171px;
+            }
+            //menu
+            .menu {
+                width: 344px;
+                //lista
+                .lista {
+                    @include agruparObjetos;
+                    //opcion
+                    .opcion {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            @include estiloTextA;
+                        }
+                    }
+                }
+            }
+        }
+        //opciones
+        .opciones {
+            width:  inherit;
+            max-width: 928px;
+            z-index: 200;
+            margin: {
+                top: 48px;
+                bottom: 24px;
+            }
+            //lista
+            .lista {
+                @include agruparObjetos;
+                //opcion
+                .opcion {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        @include estiloTextB
+                    }
+                }
+            }
+        }
+        //slide-hero
+        .slide-hero {
+            width: inherit;
+            max-width: 928px;
+            margin: {
+                top: 24px;
+                bottom: 30px;
+            }
+            @include agruparSlide;
+            //slide imagenes
+            .img_hero {
+                width: 100%;
+                height: 512px;
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: center;
+                z-index: 0;
+                //grupo
+                .grupo {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 928px;
+                    height: inherit;
+                    //img
+                    .img {
+                        position: absolute;
+                        width: 512px;
+                        height: inherit;
+                        img {
+                            width: inherit;
+                            height: inherit;
+                            border-radius: 50%;
+                            object-fit: none;
+                        }
+                    }
+                    //title
+                    .title {
+                        position: absolute;
+                        @include estiloTextE
+                    }
+                }
+                //active
+                .active {
+                    display: flex;
+                }
+            }
+            //botones
+            .botones {
+                width: inherit;
+                height: 68px;
+                z-index: 100;
+                @include agruparObjetos;
+                //boton
+                .boton {
+                    @include estiloTextD;
+                }
+                //select
+                .select {
+                    @include hoverButton;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        //line
+        .line {
+            margin-top: 30px;
+            margin-bottom: 72px;
+            @include line;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .section-1-hero {
+        width: 100%;
+    }
+    //hero
+    .hero {
+        @include agrupaContenido;
+        //nav-bar
+        .nav-bar {
+            width: inherit;
+            max-width: 424px;
+            padding: {
+                top: 16px;
+                left: 25px;
+                right: 25px;
+            }
+            height: 154px;
+            position: absolute;
+            top: 0;
+            background-color: white;
+            @include agruparSlide;
+            //title
+            .title {
+                width: 328px;
+                padding: {
+                    bottom: 8px;
+                }
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    @include estiloTextF;
+                }
+            }
+            //logo
+            .logo {
+                width: 129px;
+                padding: {
+                    bottom: 12px
+                }
+            }
+            //menu
+            .menu {
+                width: 328px;
+                //lista
+                .lista {
+                    @include agruparObjetos;
+                    //opcion
+                    .opcion {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            @include estiloTextF;
+                        }
+                    }
+                }
+            }
+        }
+        //opciones
+        .opciones {
+            width: inherit;
+            max-width: 424px;
+            height: 40px;
+            z-index: 200;
+            position: absolute;
+            top: 154px;
+            background-color: white;
+            padding: {
+                left: 25px;
+                right: 25px;
+                top: 14px;
+                bottom: 64px;
+            }
+            border: {
+                bottom-left-radius: 48px;
+                bottom-right-radius: 48px;
+            }
+            //lista
+            .lista {
+                @include agrupaOpciones;
+                //opcion
+                .opcion {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        @include estiloTextG;
+                    }
+                }
+            }
+        }
+        //slide-hero
+        .slide-hero {
+            width: inherit;
+            max-width: inherit;
+            @include agruparSlide;
+            //slide-imagenes
+            .img_hero {
+                width: 100%;
+                height: 424px;
+                margin-bottom: 160px;
+                display: flex;
+                justify-content: center;
+                z-index: -10;
+                //grupo
+                .grupo {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 424px;
+                    height: inherit;
+                    //img
+                    .img {
+                        position: absolute;
+                        width: 424px;
+                        height: inherit;
+                        img {
+                            width: inherit;
+                            height: inherit;
+                            border: {
+                                bottom-left-radius: 212px;
+                                bottom-right-radius: 212px;
+                            }
+                            object-fit: cover;
+                        }
+                    }
+                    //title
+                    .title {
+                        z-index: 0;
+                        position: relative;
+                        top: 260px;
+                        @include estiloTextH;
+                    }
+                }
+                //active
+                .active {
+                    display: flex;
+                }
+            }
+            //botones
+            .botones {
+                width: 192px;
+                z-index: 100;
+                @include agrupaOpcionesB;
+                //boton
+                .boton {
+                    margin-bottom: 48px;
+                    text-align: center;
+                    @include estiloTextI;
+                }
+                //select
+                .select {
+                    @include hoverButton;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        //line
+        .line {
+            margin-top: 22px;
+            margin-bottom: 72px;
+            @include line;
+        }
+    }
+}

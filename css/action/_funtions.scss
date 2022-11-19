@@ -1,0 +1,131 @@
+//Agrupaciones
+@mixin agrupaContenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+@mixin agruparObjetos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin agruparSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin agrupaOpciones {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid: {
+        template-columns: repeat(4,1fr);
+        auto-rows: minmax(20,auto);
+    } 
+}
+@mixin agrupaOpcionesB {
+    display: grid;
+    grid: {
+        template-columns: repeat(1,1fr);
+    }
+
+}
+//Estilos de textos
+@mixin estiloTextA {
+    color: $c-c;
+    font-family: $T-r;
+    font-size: $text-a;
+    font-weight: $G-lt;
+        &:hover {
+            color: $c-a;
+        }
+}
+@mixin estiloTextB {
+    color: $c-c;
+    font-family: $T-r;
+    font-size: $text-c;
+    font-weight: $G-bk;
+    letter-spacing: $E-3;
+        &:hover {
+            color: $c-a;
+        }
+}
+@mixin estiloTextC {
+    color: $c-a;
+    font-family: $T-b;
+    font-size: $text-d;
+}
+@mixin estiloTextD {
+    color: $c-d;
+    font-family: $T-r;
+    font-size: $text-c;
+    font-weight: $G-bd;
+    letter-spacing: $E-3;
+}
+@mixin estiloTextE {
+    color: $c-a;
+    font-family: $T-b;
+    font-size: $text-e;
+}
+@mixin estiloTextF {
+    color: $c-c;
+    font-family: $T-r;
+    font-size: $text-b;
+    font-weight: $G-lt;
+        &:hover {
+            color: $c-a;
+        }
+}
+@mixin estiloTextG {
+    color: $c-c;
+    font-family: $T-r;
+    font-size: $text-g;
+    font-weight: $G-lt;
+        &:hover {
+            color: $c-a;
+        }
+}
+@mixin estiloTextH {
+    color: $c-a;
+    font-family: $T-b;
+    font-size: $text-f;
+}
+@mixin estiloTextI {
+    color: $c-d;
+    font-family: $T-r;
+    font-size: $text-g;
+    font-weight: $G-bd;
+    letter-spacing: $E-3;
+}
+//decoraciones
+@mixin hoverButton {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: $c-c;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 16px;
+        border-radius: 2px;
+        background: $c-c;
+        top: -32px;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $c-c;
+        top: 32px;
+    }
+}
+@mixin line {
+    width: 100%;
+    height: 1px;
+    background-color: $c-c;
+}
